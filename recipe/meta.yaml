@@ -1,5 +1,5 @@
 {% set name = "nomad-schema-plugin-run" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nomad_schema_plugin_run-{{ version }}.tar.gz
-  sha256: 5fe6c0408ed28c63e26185ef3bb4df224c60384214c0ab110f67c60995017174
+  sha256: 44c13a46b77f6a1d32f08826aaf2d5b079f48b973929ca384da411b4a7f1e531
 
 build:
   noarch: python
