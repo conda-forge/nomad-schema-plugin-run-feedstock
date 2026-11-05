@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: nomad-schema-plugin-run
-  version: "1.0.5"
+  version: "1.0.6"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/nomad_schema_plugin_run-${{ version }}.tar.gz
-  sha256: 44c13a46b77f6a1d32f08826aaf2d5b079f48b973929ca384da411b4a7f1e531
+  sha256: 469ac3717fb36776bce76ce86782f0599685e4a0d986b7c0ed3c96951efab512
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
